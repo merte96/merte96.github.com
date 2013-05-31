@@ -76,7 +76,7 @@ startspaces=thisdate;
 while (startspaces > 7) startspaces-=7; 
 startspaces = thisday - startspaces + 1; 
 if (startspaces < 0) startspaces+=7; 
-document.write("<table border=2 bgcolor=#red cellPadding=3 cellSpacing=0 // цвет фона>"); 
+document.write("<table border=2 bgcolor='red'"); 
 document.write("<tr><td colspan=7 align=center><b><font size=2>" + monthnames[thismonth] + " " + thisyear + "</font></b></td></tr>"); 
 document.write("<tr>"); 
 document.write("<td align=center><font size=2><B>Вс</font></td>"); 
@@ -104,7 +104,7 @@ linktrue=true;}
 } 
 } 
 if (count==thisdate) { 
-document.write("<font color='FF0000'><b>"); 
+document.write("<font color='black'><b>"); 
 } 
 if (count <= monthdays[thismonth]) { 
 document.write(count); 
